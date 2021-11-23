@@ -62,6 +62,12 @@ void draw() {
   ellipse(ptX2, ptY2, circleDiameter, circleDiameter);
   ellipse(ptX3, ptY3, circleDiameter, circleDiameter);
   ellipse(ptX4, ptY4, circleDiameter, circleDiameter);
+  ellipse(ptX5, ptY5, circleDiameter, circleDiameter);
+  ellipse(ptX6, ptY6, circleDiameter, circleDiameter);
+  ellipse(ptX7, ptY7, circleDiameter, circleDiameter);
+  ellipse(ptX8, ptY8, circleDiameter, circleDiameter);
+  ellipse(ptX9, ptY9, circleDiameter, circleDiameter);
+  ellipse(ptX10, ptY10, circleDiameter, circleDiameter);
   fill(white);
 }//End draw()
 
