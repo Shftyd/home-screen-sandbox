@@ -1,19 +1,21 @@
 //example1
 float buttonX, buttonY, buttonWidth, buttonHeight;
+float rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight;
+float circleX, circleY, circleWidth, circleHeight;
 //Global variables
 
 
 void setup () {
   fullScreen();
   population();
-  buttonX =displayWidth*1/2;
-  buttonY =displayHeight*1/2;
-  buttonWidth =displayWidth*1/5;
-  buttonHeight =displayHeight*1/5;
+ 
 }//End setup()
 
 void draw() {
   rect(buttonX, buttonY, buttonWidth, buttonHeight);
+  rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
+  ellipse(circleX, circleY, circleWidth, circleHeight);
+  
 }//End draw()
 
 void mousePressed() {
