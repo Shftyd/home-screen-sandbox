@@ -8,6 +8,7 @@ float circleX, circleY, circleWidth, circleHeight;
 void setup () {
   fullScreen();
   population();
+  
  
 }//End setup()
 
