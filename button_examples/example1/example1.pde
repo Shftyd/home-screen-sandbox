@@ -17,6 +17,7 @@ void setup () {
 
 void draw() {
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1);
+  textDraw1();//Click me
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2);
    textDraw2();//Or me
   rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
