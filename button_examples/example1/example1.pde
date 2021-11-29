@@ -16,12 +16,13 @@ void setup () {
 }//End setup()
 
 void draw() {
+  background(white);
   rect(buttonX1, buttonY1, buttonWidth1, buttonHeight1);
   textDraw1();//Click me
   rect(buttonX2, buttonY2, buttonWidth2, buttonHeight2);
    textDraw2();//Or me
-  rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
-  ellipse(circleX, circleY, circleWidth, circleHeight);
+  if (rect==true ) rect(rectDisplayX, rectDisplayY, rectDisplayWidth, rectDisplayHeight);
+  if (circle==true) ellipse(circleX, circleY, circleWidth, circleHeight);
   
 }//End draw()
 
