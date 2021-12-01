@@ -12,10 +12,19 @@ float ptX8, ptY8;
 float ptX9, ptY9;
 float ptX10, ptY10;
 float circleDiameter; 
-color black=#000000, white=#FFFFFF;
+float button1X, button1Y, button1Width, button1Height;
+float button2X, button2Y, button2Width, button2Height;
+float button3X, button3Y, button3Width, button3Height;
+float button4X, button4Y, button4Width, button4Height;
+color black=#000000, white=#FFFFFF, yellow=#F7E114, pink=#E810DA, brown=#622D01;
+boolean turnOnYellow=false, turnOnpink=false, turnOnBrown=false;
 void setup() {
   fullScreen();
   //
+  button1X = displayWidth * 1/3 *1/3;
+  button1Y = displayHeight * 1/3 * 1/3;
+  button1Width = displayWidth * 1/3 * 1/3;
+  button1Height = displayHeight * 1/3 * 1/3;
   //Population
  
 }//End setup()
@@ -46,9 +55,21 @@ void draw() {
   ellipse(ptX8, ptY8, circleDiameter, circleDiameter);
   ellipse(ptX9, ptY9, circleDiameter, circleDiameter);
   fill(white);
+  if (mouseX>=button1X && mouseX<=button1X+button1Width && mouseY<=button1Y+button1Height) {
+    fill(yellow);
+    rect(button1X, button1Y, button1Width, button1Height);
+  } else { 
+   
+    rect(button1X, button1Y, button1Width, button1Height);
+  }
 }//End draw()
 
 void mousePressed() {
+  if ( mouseX>=button1X && mouseX<=button1X+button1Width && mouseY>=button1Y && mouseY<=button1Y+button1Height) {
+    println("Btn 1 activated");
+  yellow = true;
+  }
+  
 }//End mousePressed
 
 void keyPressed() {
