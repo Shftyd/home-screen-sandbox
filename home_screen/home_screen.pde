@@ -21,27 +21,9 @@ boolean turnOnYellow=false, turnOnPink=false, turnOnBrown=false;
 void setup() {
   fullScreen();
   //
-  button1X = displayWidth * 1/3 *1/3;
-  button1Y = displayHeight * 1/3 * 1/3;
-  button1Width = displayWidth * 1/3 * 1/3;
-  button1Height = displayHeight * 1/3 * 1/3;
-  
-  button2X = width * 3/6; //Section 2, subsection 1: denominator is 3*2, numerator is counted
-  button2Y = height * 2/6 ; //Section 2, subsection 0: denominator is 3*2, numerator is counted
-  button2Width = width * 1/3 * 1/2;
-  button2Height = height * 1/3 * 1/2;
-  
-  button3X = width * 11/15; //Section 3, subsection 2: denominator is 3*5, numerator is counted
-  button3Y = height * 14/16; //Section 3, subsection 4: denominator is 3*5, numerator is counted
-  button3Width = width * 1/3 * 1/5;
-  button3Height = height * 1/3 * 1/5;
-  
-  button4X = width*11/15; 
-  button4Y = height*1/15; 
-  button4Width = width*3/15;
-  button4Height = height*3/15;
-  //Population
  
+  //Population
+ population();
 }//End setup()
 
 void draw() {
@@ -63,7 +45,7 @@ void draw() {
   rect(ptX9, ptY9, rectWidth, rectHeight);
   rect(ptX10, ptX10, rectWidth, rectHeight);
   //
-  fill(black);
+ fill(black);
   ellipse(ptX1, ptY1, circleDiameter, circleDiameter);
   ellipse(ptX2, ptY2, circleDiameter, circleDiameter);
   ellipse(ptX3, ptY3, circleDiameter, circleDiameter);
@@ -77,34 +59,34 @@ void draw() {
   //
   
    if ( mouseX>=button1X && mouseX<=button1X+button1Width && mouseY>=button1Y && mouseY<=button1Y+button1Height) {
-    fill(yellow);
+
     rect(button1X, button1Y, button1Width, button1Height);
   } else {
    
     rect(button1X, button1Y, button1Width, button1Height);
   }
   if ( mouseX>=button2X && mouseX<=button2X+button2Width && mouseY>=button2Y && mouseY<=button2Y+button2Height) {
-    fill(yellow);
+   
     rect(button2X, button2Y, button2Width, button2Height);
   } else {
 
     rect(button2X, button2Y, button2Width, button2Height);
   }
   if ( mouseX>=button3X && mouseX<=button3X+button3Width && mouseY>=button3Y && mouseY<=button3Y+button3Height) {
-    fill(yellow);
+  
     rect(button3X, button3Y, button3Width, button3Height);
   } else {
     
     rect(button3X, button3Y, button3Width, button3Height);
   }
   if ( mouseX>=button4X && mouseX<=button4X+button4Width && mouseY>=button4Y && mouseY<=button4Y+button4Height) {
-    fill(yellow);
+    
     rect(button4X, button4Y, button4Width, button4Height);
   } else {
     
     rect(button4X, button4Y, button4Width, button4Height);
   }
-  fill(black); //Reset all IF-ELSE
+  
 }//End draw()
 
 void mousePressed() {
